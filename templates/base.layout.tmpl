@@ -1,0 +1,27 @@
+{{define "base"}}
+
+    <!doctype html>
+
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>A Basic HTML5 Template</title>
+      <meta name="description" content="Apollo">
+      <meta name="author" content="Renee MF Meyer">
+
+      <meta property="og:title" content="Apollo">
+        {{ block "css" .}}
+        {{ end }}
+    </head>
+
+    <body>
+           {{block "content" .}}
+           {{end}}
+
+           {{block "js" .}}
+           {{end}}
+    </body>
+    </html>
+{{end}}
